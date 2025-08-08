@@ -1,6 +1,10 @@
 // src/api.js
 
-const BASE_URL = 'http://localhost:8080/api/quotes'; // Change this if backend is deployed
+import { Server } from "lucide-react";
+
+
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // Handle fetch responses
 const handleResponse = async (res) => {
