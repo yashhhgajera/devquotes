@@ -35,8 +35,13 @@ export const voteQuote = async (id, voteType) => {
   return handleResponse(res);
 };
 
-// GET /api/quotes
 export const getTopQuotes = async () => {
-  const res = await fetch(BASE_URL);
+  const res = await fetch(`${BASE_URL}/top`);
+  return handleResponse(res);
+};
+
+// GET /api/quotes/all (get all quotes)
+export const getAllQuotes = async () => {
+  const res = await fetch(`${BASE_URL}`);
   return handleResponse(res);
 };

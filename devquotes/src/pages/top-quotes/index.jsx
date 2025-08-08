@@ -13,16 +13,14 @@ const TopQuotes = () => {
 
 
 
-  useEffect(() => {
-    const fetchTopQuotes = async () => {
-      setLoading(true);
-      setError(null);
-      
+ useEffect(() => {
+  const fetchTopQuotes = async () => {
+    setLoading(true);
+    setError(null);
+
       try {
-        const data = await getTopQuotes(); // real API call
-        // sort if needed — backend may already return sorted
-        const sortedQuotes = [...data].sort((a, b) => b.votes - a.votes);
-        setQuotes(sortedQuotes);
+        const data = await getTopQuotes(); // Already sorted from backend
+        setQuotes(data);
       } catch (err) {
         console.error(err);
         setError('Failed to fetch top quotes');
