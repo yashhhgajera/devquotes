@@ -1,25 +1,3 @@
-# ===== FRONTEND: devquotes-frontend =====
-
-/devquotes-frontend/node_modules
-/devquotes-frontend/dist
-/devquotes-frontend/tmp
-/devquotes-frontend/out-tsc
-/devquotes-frontend/bazel-out
-/devquotes-frontend/.angular/cache
-/devquotes-frontend/.idea
-/devquotes-frontend/.DS_Store
-/devquotes-frontend/npm-debug.log
-/devquotes-frontend/yarn-error.log
-/devquotes-frontend/.env
-/devquotes-frontend/Thumbs.db
-/devquotes-frontend/.sass-cache
-/devquotes-frontend/connect.lock
-/devquotes-frontend/coverage
-/devquotes-frontend/libpeerconnection.log
-/devquotes-frontend/testem.log
-/devquotes-frontend/typings
-/devquotes-frontend/.history
-
 # ===== BACKEND =====
 
 /backend/target/
