@@ -13,7 +13,7 @@ public interface QuoteRepository extends JpaRepository<Quote, UUID> {
     @Query("SELECT q FROM Quote q ORDER BY q.votes DESC")
     List<Quote> findTopQuotes(Pageable pageable);
 
-    @Query(value = "SELECT * FROM quotes ORDER BY RANDOM() LIMIT 1", nativeQuery = true)
+    @Query(value = "SELECT * FROM Quote ORDER BY RANDOM() LIMIT 1", nativeQuery = true)
     Quote getRandomQuote();
 
 }

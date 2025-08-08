@@ -35,10 +35,16 @@ public class QuoteController {
         return quoteService.voteQuote(id,voteType);
     }
 
-    @GetMapping
-    public List<Quote> getTopQuotes(){
-        return quoteService.getTopQuotes();
+    @GetMapping("/top")
+    public List<Quote> getTopQuotes(@RequestParam(defaultValue = "10") int limit) {
+        return quoteService.getTopQuotes(limit);
     }
+
+    @GetMapping()
+    public List<Quote> getAllQuotes(){
+        return quoteService.getAllQuotes();
+    }
+
 
 
 }

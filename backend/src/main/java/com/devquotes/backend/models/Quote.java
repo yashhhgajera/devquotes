@@ -1,5 +1,6 @@
 package com.devquotes.backend.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,14 +17,19 @@ import javax.annotation.processing.Generated;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "quotes")
 public class Quote {
 
     @Id
     @GeneratedValue
     private UUID id;
+
+    @Column(nullable = false, length = 100)
     private String author;
+
+    @Column(nullable = false, length = 500)
     private String content;
+
+    @Column
     private int votes = 0;
 
 }
