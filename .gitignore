@@ -1,5 +1,17 @@
-# ===== BACKEND =====
+# ===== GLOBAL SYSTEM FILES =====
+.DS_Store
+**/.DS_Store
+Thumbs.db
 
+# ===== IDE FILES (ALL LOCATIONS) =====
+.idea/
+**/.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# ===== BACKEND =====
 /backend/target/
 /backend/.mvn/wrapper/maven-wrapper.jar
 /backend/.apt_generated
@@ -9,39 +21,24 @@
 /backend/.settings
 /backend/.springBeans
 /backend/.sts4-cache
-/backend/.idea
-/backend/.DS_Store
-/backend/.env
-/backend/HELP.md
 /backend/build/
-/backend/nbproject/private/
-/backend/nbbuild/
-/backend/dist/
-/backend/nbdist/
-/backend/.nb-gradle/
+/backend/HELP.md
 
-# ===== IDEA PROJECT =====
+# ===== FRONTEND =====
+/devquotes/node_modules/
+/devquotes/build/
+/devquotes/dist/
+/devquotes/.env.local
+/devquotes/.env.development.local
+/devquotes/.env.test.local
+/devquotes/.env.production.local
+/devquotes/npm-debug.log*
+/devquotes/yarn-debug.log*
+/devquotes/yarn-error.log*
 
-.idea/
-.idea/shelf/
-.idea/workspace.xml
-.idea/mavenHomeManager.xml
-
-# ===== GLOBAL SYSTEM/IDE FILES =====
-
-*.iml
-*.ipr
-*.iws
-*.launch
-*.classpath
-*.project
-.settings/
-.DS_Store
-Thumbs.db
-npm-debug.log
-yarn-error.log
-*.log
-
-# ===== GENERAL =====
-
+# ===== ENVIRONMENT =====
 .env
+**/.env
+
+# ===== LOGS =====
+*.log
