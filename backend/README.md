@@ -219,15 +219,3 @@ The Dockerfile uses a multi-stage build process:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
-
-## Support
-
-For support and questions, please open an issue in the GitHub repository.
-
----
-
-**Note**: Make sure to configure your database connection and environment variables before running the application.
